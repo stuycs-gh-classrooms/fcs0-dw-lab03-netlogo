@@ -1,19 +1,19 @@
-# Foundations of Computer Science Lab02
+# Foundations of Computer Science Lab03
 
 Your goal is to recreate this program from the sample code provided:
-- <http://homer.stuy.edu/~dw/netlogo/lab02_obf.html>
+- <http://homer.stuy.edu/~dw/netlogo/lab03_obf.html>
 
 ### Instructions
 At the end of this file, you will see a large code block. It contains all the instructions for this assignment. You should:
 - Copy the code into a new NetLogo program.
 - In NetLogo, fill in the procedures and add the required interface elements.
-- When done, save the file as __lab02.nlogo__, and upload the entire file to this repository.
+- When done, save the file as __lab03.nlogo__, and upload the entire file to this repository.
 
 ```
 ; For this assignment, you will need to create procedures
 ; and interface elements.
 ; Use this example as your guide:
-; http://homer.stuy.edu/~dw/netlogo/lab02_obf.html
+; http://homer.stuy.edu/~dw/netlogo/lab03_obf.html
 
 ;=========================================
 ; Buttons
@@ -100,13 +100,25 @@ to slant
 end
 
 ;=========================================
-; diagonal (forever button)
-; A turtle should move randomly.
-; pick 2 colors, turtles should be one
-; of those 2 colors based on their position
-; in the world. Use the sample program linked
-; above to see this pattern.
-to diagonal
+; patchColorGradientGraycale
+; set every patches color such that the left-most patch
+; in a row is black, the right-most in a row
+; is almost white (it may not be exactly 9.9),
+; and all the patches in between are a grayscale value
+; creating a smooth gradient from black to (almost) white
+; each row of patches should look the same.
+to patchGradientGrayscale
+
+end
+
+;=========================================
+; patchColorGradientColor
+; set patches colors similar to patchGradientGrayscale,
+; but each row should correspond to a true netlogo color.
+; The bottom row should be gray, the next row should be red,
+; and so on. The cycle of colors should repeat as needed.
+
+to patchGradientColor
 
 end
 ```
